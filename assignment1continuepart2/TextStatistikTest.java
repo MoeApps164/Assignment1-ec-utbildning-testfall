@@ -17,6 +17,12 @@ public class TextStatistikTest {
         ts.läggTillRad("Där"); // 3 till
         assertEquals(6, ts.getTeckenAntal());
     }
+    @Test
+    public void testAttIngetHänderUtanRad() {
+        TextStatistik ts = new TextStatistik();
+        assertEquals(0, ts.getRadAntal());
+        assertEquals(0, ts.getTeckenAntal());
+    }
 
 
 }
