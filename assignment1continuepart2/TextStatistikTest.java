@@ -10,4 +10,13 @@ public class TextStatistikTest {
         assertEquals(1, ts.getRadAntal());
     }
 
+    @Test
+    public void testAttTeckenRäknas() {
+        TextStatistik ts = new TextStatistik();
+        ts.läggTillRad("Hej"); // 3 tecken
+        ts.läggTillRad("Där"); // 3 till
+        assertEquals(6, ts.getTeckenAntal());
+    }
+
+
 }
